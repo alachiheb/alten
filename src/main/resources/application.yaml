@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  forward-headers-strategy: FRAMEWORK
+spring:
+  datasource:
+    url:  jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+springdoc:
+  api-docs:
+    path: /public/v3/api-docs
+  swagger-ui:
+    path: /public/swagger-ui.html
+logging:
+  level:
+    com.trescal.productManagement.config: DEBUG
+    com.trescal.productManagement: DEBUG
+    org.springframework:
+      security: DEBUG
+
+
+
