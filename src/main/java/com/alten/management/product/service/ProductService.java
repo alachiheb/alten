@@ -32,6 +32,9 @@ public record ProductService(ProductRepository productRepository){
     }
 
     public void update(Product product, long id) {
+        if (productRepository.findById(id).isEmpty()){
+            throw new ProductNotFoundException(ProductExceptionMessage.PRODUCT_NOT_FOUND.toErrorMessage());
+        }
         productRepository
                 .findById(id) // returns Optional<User>
                 .ifPresent(product1 -> {

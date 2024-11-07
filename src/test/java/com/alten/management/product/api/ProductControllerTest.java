@@ -4,7 +4,6 @@ package com.alten.management.product.api;
 import com.alten.management.product.model.Product;
 import com.alten.management.product.model.ProductDto;
 import com.alten.management.product.repository.ProductRepository;
-import com.alten.management.product.util.InventoryStatus;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,6 @@
 package com.alten.management.product.model;
 
 import com.alten.management.product.util.InventoryStatus;
-import jakarta.validation.constraints.NotBlank;
 import lombok.Builder;
 
 import java.util.Date;

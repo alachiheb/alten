@@ -44,7 +44,6 @@ public record ProductController(ProductService productService, ProductMapper pro
 
     @PutMapping("/products/{id}")
     public ResponseEntity<Product> updateTutorial(@PathVariable("id") long id, @RequestBody Product product) {
-        Optional<Product> productU = Optional.of(productService.getProductById(id));
         productService.update(product,id);
         return ResponseEntity.status(HttpStatus.ACCEPTED).body(product);
     }

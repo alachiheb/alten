@@ -14,10 +14,7 @@ springdoc:
     path: /public/swagger-ui.html
 logging:
   level:
-    com.trescal.productManagement.config: DEBUG
-    com.trescal.productManagement: DEBUG
-    org.springframework:
-      security: DEBUG
+    com.alten.management.product: DEBUG
 
 
 
